@@ -1,6 +1,7 @@
 ### IMPORTANT
 * Use standard source control best practices: Modify locally and check in your changes before deploying terraform and/or Lamda code
 * If you are changing the Lambda code, make sure to redo the src.zip file in the root directory by zipping the whole "src" directory as this is what is deployed, not the .py file
+* Terraform commands must be run in the "infra" directory. It will pick up the src.zip in the root directory when terraform apply is run.
 
 
 ### Lambda S3 Notifier
